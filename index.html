@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RedOrbit Studios — Building Worlds Beyond Imagination</title>
+<meta name="description" content="RedOrbit Studios is a Sri Lankan game development studio creating immersive games, cinematic worlds, and interactive entertainment for the next generation of players.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo" aria-label="RedOrbit Studios home">
+      <span class="logo-mark">
+        <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="14" cy="14" r="12" fill="none" stroke="#A0A0AC" stroke-width="0.9" opacity="0.5"/>
+          <circle cx="14" cy="14" r="7" fill="none" stroke="#A0A0AC" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.6"/>
+          <circle cx="14" cy="14" r="3.5" fill="#E10A1F"/>
+          <circle cx="24" cy="10" r="1.6" fill="#E10A1F"/>
+        </svg>
+      </span>
+      <span>Red<span class="red">Orbit</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="games.html">Games</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Work With Us
+        <svg class="arrow" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7h15M10 1l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="games.html">Games</a>
+  <a href="services.html">Services</a>
+  <a href="studio.html">Studio</a>
+  <a href="careers.html">Careers</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content reveal">
+        <span class="eyebrow"><span class="num">SYS</span> 01 / Origin</span>
+        <h1 class="display">Building Worlds<br>Beyond <span class="accent">Imagination.</span></h1>
+        <p class="lede">RedOrbit Studios creates immersive games, cinematic digital worlds, and interactive entertainment experiences for the next generation of players — engineered in Sri Lanka, built for everywhere.</p>
+        <div class="hero-ctas">
+          <a href="games.html" class="btn btn-primary">Explore Our Games
+            <svg class="arrow" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7h15M10 1l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="contact.html" class="btn btn-secondary">Work With Us</a>
+        </div>
+      </div>
+
+      <div class="orbit-stage reveal" aria-hidden="true">
+        <div class="orbit-hud tl">// signal_lock<br><span class="v">acquired</span></div>
+        <div class="orbit-hud tr">azimuth<br><span class="v">312.04°</span></div>
+        <div class="orbit-hud bl">vector<br><span class="v">+0.0421</span></div>
+        <div class="orbit-hud br">core_id<br><span class="v">RED-0X1</span></div>
+        <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FF3D2E" stop-opacity="0.55"/>
+              <stop offset="60%" stop-color="#E10A1F" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#8A0414" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="redGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="6" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- Cardinal crosshairs -->
+          <g stroke="#383842" stroke-width="0.5">
+            <line x1="300" y1="12" x2="300" y2="38"/>
+            <line x1="300" y1="562" x2="300" y2="588"/>
+            <line x1="12" y1="300" x2="38" y2="300"/>
+            <line x1="562" y1="300" x2="588" y2="300"/>
+          </g>
+
+          <!-- Outer ring, dashed, rotating very slow -->
+          <g class="orbit-ring-3">
+            <circle cx="300" cy="300" r="280" fill="none" stroke="#383842" stroke-width="0.8" stroke-dasharray="2 8" opacity="0.7"/>
+            <circle cx="300" cy="20" r="3" fill="#9A9AA6"/>
+          </g>
+
+          <!-- Mid ring, solid + red arc -->
+          <g class="orbit-ring-2">
+            <circle cx="300" cy="300" r="220" fill="none" stroke="#24242E" stroke-width="1"/>
+            <path d="M 300 80 A 220 220 0 0 1 502 358" fill="none" stroke="#E10A1F" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+            <circle cx="502" cy="358" r="7" fill="#FF3D2E" filter="url(#redGlow)"/>
+          </g>
+
+          <!-- Inner dashed ring -->
+          <g class="orbit-ring-1">
+            <circle cx="300" cy="300" r="160" fill="none" stroke="#383842" stroke-width="0.7" stroke-dasharray="4 4" opacity="0.55"/>
+            <circle cx="140" cy="300" r="4" fill="#A0A0AC"/>
+          </g>
+
+          <!-- Core -->
+          <g class="orbit-core">
+            <circle cx="300" cy="300" r="80" fill="url(#coreGlow)"/>
+            <circle cx="300" cy="300" r="26" fill="#E10A1F" filter="url(#redGlow)"/>
+            <circle cx="300" cy="300" r="11" fill="#FF6B5C"/>
+          </g>
+
+          <!-- Static tick marks on inner ring -->
+          <g stroke="#62626C" stroke-width="0.5">
+            <line x1="300" y1="135" x2="300" y2="145"/>
+            <line x1="300" y1="455" x2="300" y2="465"/>
+            <line x1="135" y1="300" x2="145" y2="300"/>
+            <line x1="455" y1="300" x2="465" y2="300"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED GAMES
+     ============================================================ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="num">02</span> Transmissions</span>
+      <h2>Featured games from<br>the RedOrbit catalogue.</h2>
+      <p class="lede">A growing library of original titles spanning sci-fi survival, dark fantasy, multiplayer simulation, and culturally-rooted action-adventure.</p>
+    </div>
+
+    <div class="games-featured">
+
+      <article class="game-card-h reveal">
+        <div class="art">
+          <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=1200&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="meta">
+          <div>
+            <div class="pills">
+              <span class="pill red">Flagship</span>
+              <span class="pill">Sci-fi Survival</span>
+              <span class="pill">PC · Console</span>
+            </div>
+            <h3>Nova Exile</h3>
+            <p class="desc">A ruined orbital colony. A protagonist with no memory and a malfunctioning AI companion. Survive the rotation, decode the wreckage, and decide what humanity inherits next.</p>
+          </div>
+          <div class="actions">
+            <span class="status"><span class="dot"></span>In Development · 68%</span>
+            <div style="display:flex; gap:14px; margin-left:auto;">
+              <a href="games.html" class="btn-ghost">View Details</a>
+              <a href="games.html" class="btn-ghost">Watch Trailer</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="game-card-h reveal">
+        <div class="art">
+          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1200&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="meta">
+          <div>
+            <div class="pills">
+              <span class="pill">Dark Fantasy RPG</span>
+              <span class="pill">PC · Console</span>
+            </div>
+            <h3>Ashen Veil</h3>
+            <p class="desc">A ranger walks a kingdom suffocated by an ancestral fog. Decisions are quiet. Consequences are not. A slow-burn RPG built around moral weight and atmospheric combat.</p>
+          </div>
+          <div class="actions">
+            <span class="status prototype"><span class="dot"></span>Vertical Slice</span>
+            <div style="display:flex; gap:14px; margin-left:auto;">
+              <a href="games.html" class="btn-ghost">View Details</a>
+              <a href="games.html" class="btn-ghost">Watch Trailer</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="game-card-h reveal">
+        <div class="art">
+          <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=1200&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="meta">
+          <div>
+            <div class="pills">
+              <span class="pill">Action-Adventure</span>
+              <span class="pill">PC · Mobile</span>
+            </div>
+            <h3>Kavaya</h3>
+            <p class="desc">A globally-styled action-adventure drawn from Sri Lankan mythology — its forgotten kingdoms, painted caves, and the warriors who walked between them. Our love letter, in playable form.</p>
+          </div>
+          <div class="actions">
+            <span class="status prototype"><span class="dot"></span>In Pre-production</span>
+            <div style="display:flex; gap:14px; margin-left:auto;">
+              <a href="games.html" class="btn-ghost">View Details</a>
+              <a href="games.html" class="btn-ghost">Watch Trailer</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="margin-top:48px;" class="reveal">
+      <a href="games.html" class="btn btn-secondary">See Full Catalogue
+        <svg class="arrow" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7h15M10 1l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section style="background: var(--bg-surface);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="num">03</span> Capabilities</span>
+      <h2>An end-to-end studio,<br>not a single discipline.</h2>
+      <p class="lede">RedOrbit operates as a self-contained production unit. We can carry a title from concept sketch to launch build, or plug into your existing pipeline at any stage.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="service-card reveal">
+        <span class="num">01</span>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7l9-4 9 4-9 4-9-4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+        <h3>Game Development</h3>
+        <p>Full-cycle production from prototype to ship — gameplay systems, engine work, build pipelines, and post-launch live operations.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="num">02</span>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/><path d="M12 3v18M3 12h18M5 7c4 2.5 10 2.5 14 0M5 17c4-2.5 10-2.5 14 0" stroke="currentColor" stroke-width="1.4"/></svg></div>
+        <h3>3D Art &amp; Animation</h3>
+        <p>Environments, characters, props, and cinematic animation. Stylised or photoreal — we build to the art bible, not the trend chart.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="num">03</span>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="7" width="20" height="11" rx="2" stroke="currentColor" stroke-width="1.4"/><circle cx="7" cy="12.5" r="1.4" fill="currentColor"/><circle cx="17" cy="12.5" r="1.4" fill="currentColor"/><path d="M9 12.5h6" stroke="currentColor" stroke-width="1.4"/></svg></div>
+        <h3>VR / AR Experiences</h3>
+        <p>Spatial design, immersive interactions, and platform-tuned builds for Quest, Vision Pro, and emerging XR hardware.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="num">04</span>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12l3 3 6-6 6 6 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 18h18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+        <h3>Simulation &amp; Training</h3>
+        <p>Serious games for industry — aerospace, healthcare, defense, energy. Real-time fidelity with measurable learning outcomes.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="num">05</span>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.4"/></svg></div>
+        <h3>Game UI / UX</h3>
+        <p>HUDs, menus, in-game systems and accessibility. Interfaces that disappear into play, not compete with it.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="num">06</span>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.4 5.6L20 8l-4.4 3.8L17 18l-5-3-5 3 1.4-6.2L4 8l5.6-0.4L12 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+        <h3>Technical Prototyping</h3>
+        <p>Vertical slices, R&amp;D builds, and feasibility prototypes. We answer hard questions early — before a green light is on the line.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:48px;" class="reveal">
+      <a href="services.html" class="btn btn-secondary">All Services
+        <svg class="arrow" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7h15M10 1l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STUDIO INTRO
+     ============================================================ -->
+<section>
+  <div class="container">
+    <div class="studio-intro">
+      <div class="image-block reveal">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=900&q=80&auto=format&fit=crop" alt="RedOrbit studio environment">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow"><span class="num">04</span> Origin</span>
+        <h2>A Sri Lankan studio<br>with global trajectory.</h2>
+        <p>RedOrbit Studios was founded with a single conviction: that world-class interactive entertainment can be authored from anywhere — and that the next generation of distinctive voices in games will not all come from the same five postal codes.</p>
+        <p>We are engineers, artists, designers, and storytellers building original IP for global audiences and partnering with publishers, studios, and platforms on titles that demand a different kind of taste.</p>
+        <div class="stat-row">
+          <div class="stat"><span class="v">6+</span><span class="l">Active Titles</span></div>
+          <div class="stat"><span class="v">40+</span><span class="l">Craftspeople</span></div>
+          <div class="stat"><span class="v">3</span><span class="l">Continents Served</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY REDORBIT
+     ============================================================ -->
+<section style="background: var(--bg-surface); padding-top: 100px;">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="num">05</span> Doctrine</span>
+      <h2>Why RedOrbit.</h2>
+    </div>
+
+    <div class="pillars reveal">
+      <div class="pillar">
+        <span class="num">PILLAR / I</span>
+        <h3>Creative Vision</h3>
+        <p>We start from the world before the wireframe. Every project begins with a clear creative thesis — a feeling we want the player to leave with — and the rest of the build is in service of that.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">PILLAR / II</span>
+        <h3>Technical Excellence</h3>
+        <p>Modern engines, disciplined pipelines, and a deep bench in real-time graphics, gameplay programming, and toolchain engineering. We treat code as a craft, not a cost.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">PILLAR / III</span>
+        <h3>Global Ambition</h3>
+        <p>Built in Sri Lanka. Shipped to the world. We hold every release to the bar of the studios we admire — and ship for an audience that does not care where a game was made, only how it plays.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NEWS
+     ============================================================ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal" style="display:flex; flex-direction:row; justify-content:space-between; align-items:flex-end; max-width:none; flex-wrap:wrap; gap:24px;">
+      <div>
+        <span class="eyebrow"><span class="num">06</span> Dispatches</span>
+        <h2 style="margin-top:18px;">From inside the studio.</h2>
+      </div>
+      <a href="news.html" class="btn-ghost">All Dispatches →</a>
+    </div>
+
+    <div class="news-grid">
+      <article class="news-card reveal">
+        <div class="art"><img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&q=80&auto=format&fit=crop" alt=""></div>
+        <div class="body">
+          <span class="tag">Engineering</span>
+          <h3>Behind the build: engineering Ashen Veil's volumetric fog system.</h3>
+          <p>How we built a fog system that carries narrative weight — readable, performant on console, and honest to the art direction.</p>
+          <span class="date">14 May 2026</span>
+        </div>
+      </article>
+
+      <article class="news-card reveal">
+        <div class="art"><img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?w=800&q=80&auto=format&fit=crop" alt=""></div>
+        <div class="body">
+          <span class="tag">Announcement</span>
+          <h3>Nova Exile reveals vertical slice ahead of Spring Showcase.</h3>
+          <p>A 22-minute hands-on slice goes wide for press and partners. Public reveal trailer follows in early June.</p>
+          <span class="date">02 May 2026</span>
+        </div>
+      </article>
+
+      <article class="news-card reveal">
+        <div class="art"><img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=800&q=80&auto=format&fit=crop" alt=""></div>
+        <div class="body">
+          <span class="tag">Studio Diary</span>
+          <h3>Building a AAA-grade content pipeline from Colombo.</h3>
+          <p>Why we standardised on USD, how we structured our asset review cadence, and what we got wrong in the first six months.</p>
+          <span class="date">18 Apr 2026</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BIG CTA
+     ============================================================ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <span class="eyebrow"><span class="num">07</span> Engage</span>
+      <h2 class="display">Have a world that<br>deserves to be built?</h2>
+      <p>Whether you're a publisher with a property, a platform with a brief, or a developer who has read this far and wants to sit on our side of the table — we're listening.</p>
+      <a href="contact.html" class="btn btn-primary">Start a Conversation
+        <svg class="arrow" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7h15M10 1l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="14" r="12" fill="none" stroke="#A0A0AC" stroke-width="0.9" opacity="0.5"/>
+              <circle cx="14" cy="14" r="7" fill="none" stroke="#A0A0AC" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.6"/>
+              <circle cx="14" cy="14" r="3.5" fill="#E10A1F"/>
+              <circle cx="24" cy="10" r="1.6" fill="#E10A1F"/>
+            </svg>
+          </span>
+          <span>Red<span class="red">Orbit</span></span>
+        </a>
+        <p>Immersive games, cinematic worlds, and interactive entertainment — engineered in Sri Lanka, built for the world.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="studio.html">About</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Press Kit</a></li>
+          <li><a href="contact.html">Publishing Inquiries</a></li>
+          <li><a href="contact.html">Partnerships</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter">
+        <h4>Transmission</h4>
+        <p>Studio updates, new game reveals, and behind-the-scenes — once a month, never more.</p>
+        <form>
+          <input type="email" placeholder="your@email.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 RedOrbit Studios · Colombo, Sri Lanka</p>
+      <div class="socials">
+        <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.339 18V9.882H5.667V18h2.672zM7.003 8.717a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18 18v-4.443c0-2.327-1.255-3.41-2.93-3.41a2.528 2.528 0 0 0-2.298 1.265V9.882h-2.547V18h2.672v-4.5a1.484 1.484 0 0 1 1.485-1.598c.834 0 1.46.626 1.46 1.598V18H18z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="#" aria-label="Discord"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

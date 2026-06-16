@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Games — RedOrbit Studios</title>
+<meta name="description" content="Explore RedOrbit Studios' game catalogue — released titles, vertical slices, and upcoming projects in development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="12" fill="none" stroke="#A0A0AC" stroke-width="0.9" opacity="0.5"/><circle cx="14" cy="14" r="7" fill="none" stroke="#A0A0AC" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.6"/><circle cx="14" cy="14" r="3.5" fill="#E10A1F"/><circle cx="24" cy="10" r="1.6" fill="#E10A1F"/></svg>
+      </span>
+      <span>Red<span class="red">Orbit</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="games.html" class="active">Games</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Work With Us<svg class="arrow" viewBox="0 0 18 14" fill="none"><path d="M1 7h15M10 1l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <button class="nav-toggle" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="games.html">Games</a><a href="services.html">Services</a><a href="studio.html">Studio</a><a href="careers.html">Careers</a><a href="news.html">News</a><a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner reveal">
+      <span class="eyebrow"><span class="num">01</span> Catalogue</span>
+      <h1 class="display">The games we are building.</h1>
+      <p>Original IP, partner titles, prototypes, and the things that will never see daylight but taught us what to ship next.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="games-filter reveal">
+      <button class="filter-btn active" data-filter="all">All Titles</button>
+      <button class="filter-btn" data-filter="dev">In Development</button>
+      <button class="filter-btn" data-filter="proto">Prototype</button>
+      <button class="filter-btn" data-filter="released">Released</button>
+    </div>
+
+    <div class="game-grid">
+
+      <article class="game-card-v reveal" data-status="dev">
+        <div class="art">
+          <div class="status-overlay"><span class="status"><span class="dot"></span>In Development</span></div>
+          <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=900&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="body">
+          <h3>Nova Exile</h3>
+          <div class="pills"><span class="pill red">Flagship</span><span class="pill">Sci-fi Survival</span><span class="pill">PC · Console</span></div>
+          <p class="desc">A protagonist with no memory and a malfunctioning AI companion wakes on a derelict orbital colony. Survive the rotation. Decode the wreckage.</p>
+          <div class="actions"><a href="#" class="btn-ghost">View Details</a><a href="#" class="btn-ghost">Watch Trailer</a></div>
+        </div>
+      </article>
+
+      <article class="game-card-v reveal" data-status="proto">
+        <div class="art">
+          <div class="status-overlay"><span class="status prototype"><span class="dot"></span>Vertical Slice</span></div>
+          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=900&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="body">
+          <h3>Ashen Veil</h3>
+          <div class="pills"><span class="pill">Dark Fantasy RPG</span><span class="pill">PC · Console</span></div>
+          <p class="desc">A ranger walks a kingdom suffocated by an ancestral fog. A slow-burn RPG built around moral weight and atmospheric combat.</p>
+          <div class="actions"><a href="#" class="btn-ghost">View Details</a><a href="#" class="btn-ghost">Watch Trailer</a></div>
+        </div>
+      </article>
+
+      <article class="game-card-v reveal" data-status="dev">
+        <div class="art">
+          <div class="status-overlay"><span class="status"><span class="dot"></span>In Development</span></div>
+          <img src="https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=900&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="body">
+          <h3>Orbital Drift</h3>
+          <div class="pills"><span class="pill">Multiplayer Space Sim</span><span class="pill">PC</span></div>
+          <p class="desc">Sixteen-pilot zero-gravity dogfights across a procedurally-eroding asteroid belt. Loadouts matter. Bravery matters more.</p>
+          <div class="actions"><a href="#" class="btn-ghost">View Details</a><a href="#" class="btn-ghost">Watch Trailer</a></div>
+        </div>
+      </article>
+
+      <article class="game-card-v reveal" data-status="proto">
+        <div class="art">
+          <div class="status-overlay"><span class="status prototype"><span class="dot"></span>Pre-production</span></div>
+          <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=900&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="body">
+          <h3>Kavaya</h3>
+          <div class="pills"><span class="pill">Action-Adventure</span><span class="pill">PC · Mobile</span></div>
+          <p class="desc">An action-adventure drawn from Sri Lankan mythology — its forgotten kingdoms, painted caves, and the warriors who walked between them.</p>
+          <div class="actions"><a href="#" class="btn-ghost">View Details</a><a href="#" class="btn-ghost">Watch Trailer</a></div>
+        </div>
+      </article>
+
+      <article class="game-card-v reveal" data-status="dev">
+        <div class="art">
+          <div class="status-overlay"><span class="status"><span class="dot"></span>In Development</span></div>
+          <img src="https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=900&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="body">
+          <h3>The Last Circuit</h3>
+          <div class="pills"><span class="pill">Cyberpunk Thriller</span><span class="pill">PC · Console</span></div>
+          <p class="desc">A network engineer goes black in a city that runs on rented intelligence. A single-player narrative thriller about systems that watch back.</p>
+          <div class="actions"><a href="#" class="btn-ghost">View Details</a><a href="#" class="btn-ghost">Watch Trailer</a></div>
+        </div>
+      </article>
+
+      <article class="game-card-v reveal" data-status="proto">
+        <div class="art">
+          <div class="status-overlay"><span class="status prototype"><span class="dot"></span>Concept</span></div>
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="body">
+          <h3>Project Helios</h3>
+          <div class="pills"><span class="pill red">Unannounced</span><span class="pill">TBA</span></div>
+          <p class="desc">Our most ambitious project to date. Currently in stealth — partners and press can request a briefing through the contact page.</p>
+          <div class="actions"><a href="contact.html" class="btn-ghost">Request Brief</a></div>
+        </div>
+      </article>
+
+      <article class="game-card-v reveal" data-status="released">
+        <div class="art">
+          <div class="status-overlay"><span class="status released"><span class="dot"></span>Released</span></div>
+          <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?w=900&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="body">
+          <h3>Signal Drop</h3>
+          <div class="pills"><span class="pill">Arcade Roguelite</span><span class="pill">Mobile · PC</span></div>
+          <p class="desc">A neon-soaked vertical scroller that rewards risk over routine. Our debut self-published title — 800K+ downloads and counting.</p>
+          <div class="actions"><a href="#" class="btn-ghost">View Details</a><a href="#" class="btn-ghost">Watch Trailer</a></div>
+        </div>
+      </article>
+
+      <article class="game-card-v reveal" data-status="released">
+        <div class="art">
+          <div class="status-overlay"><span class="status released"><span class="dot"></span>Released</span></div>
+          <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=900&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="body">
+          <h3>Hollow Frame</h3>
+          <div class="pills"><span class="pill">Puzzle Horror</span><span class="pill">PC</span></div>
+          <p class="desc">A four-hour single-sitting horror experience about a photograph that develops differently each time it's printed. Critically reviewed, quietly loved.</p>
+          <div class="actions"><a href="#" class="btn-ghost">View Details</a><a href="#" class="btn-ghost">Watch Trailer</a></div>
+        </div>
+      </article>
+
+      <article class="game-card-v reveal" data-status="dev">
+        <div class="art">
+          <div class="status-overlay"><span class="status"><span class="dot"></span>In Development</span></div>
+          <img src="https://images.unsplash.com/photo-1635322966219-b75ed372eb01?w=900&q=80&auto=format&fit=crop" alt="">
+        </div>
+        <div class="body">
+          <h3>Counterpoint</h3>
+          <div class="pills"><span class="pill">Rhythm Strategy</span><span class="pill">PC · Switch</span></div>
+          <p class="desc">A grid-based tactics game where every move is timed to the soundtrack. Co-developed with a Tokyo-based publishing partner.</p>
+          <div class="actions"><a href="#" class="btn-ghost">View Details</a><a href="#" class="btn-ghost">Watch Trailer</a></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <span class="eyebrow"><span class="num">02</span> Publish With Us</span>
+      <h2 class="display">A publisher,<br>a platform, a partner?</h2>
+      <p>Briefings, pitch decks, and confidential previews are available on request. We respond to every serious inquiry within two business days.</p>
+      <a href="contact.html" class="btn btn-primary">Open a Channel<svg class="arrow" viewBox="0 0 18 14" fill="none"><path d="M1 7h15M10 1l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark"><svg viewBox="0 0 28 28"><circle cx="14" cy="14" r="12" fill="none" stroke="#A0A0AC" stroke-width="0.9" opacity="0.5"/><circle cx="14" cy="14" r="7" fill="none" stroke="#A0A0AC" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.6"/><circle cx="14" cy="14" r="3.5" fill="#E10A1F"/><circle cx="24" cy="10" r="1.6" fill="#E10A1F"/></svg></span>
+          <span>Red<span class="red">Orbit</span></span>
+        </a>
+        <p>Immersive games, cinematic worlds, and interactive entertainment — engineered in Sri Lanka, built for the world.</p>
+      </div>
+      <div class="footer-col"><h4>Studio</h4><ul><li><a href="studio.html">About</a></li><li><a href="games.html">Games</a></li><li><a href="services.html">Services</a></li><li><a href="careers.html">Careers</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="contact.html">Press Kit</a></li><li><a href="contact.html">Publishing Inquiries</a></li><li><a href="contact.html">Partnerships</a></li></ul></div>
+      <div class="footer-col newsletter">
+        <h4>Transmission</h4>
+        <p>Studio updates, new game reveals, and behind-the-scenes — once a month, never more.</p>
+        <form><input type="email" placeholder="your@email.com" required><button type="submit">Subscribe</button></form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 RedOrbit Studios · Colombo, Sri Lanka</p>
+      <div class="socials">
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.339 18V9.882H5.667V18h2.672zM7.003 8.717a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18 18v-4.443c0-2.327-1.255-3.41-2.93-3.41a2.528 2.528 0 0 0-2.298 1.265V9.882h-2.547V18h2.672v-4.5a1.484 1.484 0 0 1 1.485-1.598c.834 0 1.46.626 1.46 1.598V18H18z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="#" aria-label="Discord"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
